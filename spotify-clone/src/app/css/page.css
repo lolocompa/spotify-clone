@@ -1,0 +1,95 @@
+.main-page {
+  background-color: #121212;
+  height: 85vh;
+  width: 70vw;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(to bottom, #154d10 0%, #1d6b16 20%, #121212 40%);
+}
+
+.main h2 {
+  color: white;
+}
+
+.songs-container {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.main-songs img {
+  width: 150px;
+}
+
+.main-songs {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Semi-transparent border */
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.main-songs:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  background: rgba(255, 255, 255, 0.05); /* Darker background on hover */
+}
+
+.main-songs h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.main-songs h4 {
+  color: #a4a4a4;
+  font-size: 10px;
+  margin: 0;
+}
+
+.icon-play {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #1bd760;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 60%;
+  opacity: 0;
+  transform: translateY(0);
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add smooth transition */
+  cursor: pointer;
+}
+
+.icon-pause {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #1bd760;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 60%;
+  transform: translateY(-60px); /* Move icon up smoothly */
+  cursor: pointer;
+}
+
+.main-songs:hover .icon-play {
+  display: flex;
+  opacity: 1;
+  transform: translateY(-60px); /* Move icon up smoothly */
+}
+
+.greetings {
+  margin-left: 20px;
+  font-weight: 1000;
+}

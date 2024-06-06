@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  background-color: #000000;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.container-flex {
+  display: flex;
+}
+
+.aside {
+  border: solid black;
+  width: 25%;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.top-aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+  margin-bottom: 10px;
+}
+
+.search-container,
+.home-container {
+  display: flex;
+  align-items: center;
+  transition: background-color 1s ease, color 1s ease;
+  cursor: pointer;
+}
+
+.home-container:hover i,
+.home-container:hover h3 {
+  color: white;
+}
+
+.search-container:hover i,
+.search-container:hover h3 {
+  color: white;
+}
+
+.top-aside i,
+.top-aside h3 {
+  color: #a7a7a7;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-aside i {
+  font-size: 26px;
+}
+
+.top-aside h3 {
+  font-size: 15px;
+}
+
+.biblioteca {
+  min-height: 82.5%;
+  background-color: #121212;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.library-icon {
+  color: #a7a7a7;
+  width: 50px;
+}
+
+.icon-container {
+  display: flex;
+  padding: 10px;
+}
+
+.icon-container h3 {
+  color: #a7a7a7;
+  margin-left: 28px;
+  font-size: 15px;
+}

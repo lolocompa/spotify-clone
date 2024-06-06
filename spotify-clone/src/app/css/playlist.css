@@ -1,0 +1,99 @@
+.playlist-container {
+  background-color: #121212;
+  height: 85vh;
+  width: 71vw;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.playlist-header {
+  display: flex;
+  align-items: flex-end;
+}
+
+.img-container {
+  margin: 10px;
+}
+
+.img-container img {
+  width: 180px;
+}
+
+.playlist-info {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+.playlist-info h2 {
+  color: white;
+  font-size: 39px;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+.playlist-info h5 {
+  color: #a7a7a7;
+  margin: 0;
+}
+
+.playlist-info h3 {
+  color: #a7a7a7;
+  margin: 5px 0 0 0;
+  font-size: 13px;
+}
+
+.playlist-info h4 {
+  color: #a7a7a7;
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.table {
+  margin-top: 50px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.row1 {
+  width: 10%;
+}
+
+.td {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.td img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.td-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.td-info h3 {
+  margin: 5px;
+  font-size: 12px;
+  color: #a7a7a7;
+}
+
+th {
+  color: #a7a7a7;
+}
+
+td {
+  color: #a7a7a7;
+}

@@ -1,0 +1,171 @@
+.player {
+  height: 80px;
+  margin-top: 10px;
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.left {
+  width: 300px;
+}
+
+.player-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-play {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  color: white;
+}
+
+.songImg {
+  width: 60px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.songInfo h3 {
+  font-size: 15px;
+  color: #fcfcfb;
+  font-weight: 400;
+}
+
+.songInfo h4 {
+  color: #a4a4a4;
+  font-size: 10px;
+}
+
+.slider-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.slider {
+  -webkit-appearance: none; /* Override default styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 8px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white var(--value, 50%),
+    #4d4c4c var(--value, 50%),
+    #4d4c4c 100%
+  );
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+  background-color: #1db954;
+}
+
+/* The slider handle (use webkit prefix for all browsers) */
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #1db954; /* Green background for Spotify */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* All other browser handles */
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #1db954;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the fill track */
+.slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.slider::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white var(--value, 50%),
+    #d3d3d3 var(--value, 50%),
+    #d3d3d3 100%
+  );
+}
+
+.right {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+.volume-icon {
+  cursor: pointer;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-time {
+  width: 400px;
+}
+
+.slider-time::-webkit-slider-thumb {
+  display: none;
+}
+
+.time-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-time {
+  color: #a7a7a7;
+  margin: 0 10px;
+  font-size: 15px;
+}
